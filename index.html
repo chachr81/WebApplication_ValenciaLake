@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <title>Variación de Área y Volúmen del Lago de Valencia</title>
+
+  <!-- Estilos de ArcGIS -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+  <!-- Import map para cargar los módulos desde el CDN -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@arcgis/core/": "https://js.arcgis.com/4.30/@arcgis/core/"
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Contenedor del mapa -->
+  <div id="viewDiv"></div>
+
+  <!-- Control deslizante para el timelapse con botones de reproducción, avance y retroceso -->
+  <div id="timeControl">
+    <button id="rewindButton">⏪</button> <!-- Botón de retroceso -->
+    <button id="playButton">▶</button> <!-- Botón de reproducción -->
+    <button id="forwardButton">⏩</button> <!-- Botón de avance -->
+    <input type="range" id="timeSlider" min="1986" max="2023" step="1" value="1986">
+    <span id="yearLabel">1986</span>
+  </div>
+
+  <!-- Cargar el script principal -->
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+# Ignorar carpetas específicas
+.vscode/
+node_modules/
+
+# Ignorar archivos específicos
+package-lock.json

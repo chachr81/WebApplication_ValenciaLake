@@ -1,0 +1,19 @@
+{
+  "name": "presentacion_valencialake",
+  "version": "1.0.0",
+  "description": "Proyecto para presentación de Valencia Lake",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.30.9",
+    "presentacion_valencialake": "file:"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
