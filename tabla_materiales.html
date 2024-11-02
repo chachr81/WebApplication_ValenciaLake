@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Satélites</title>
+<style>
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        max-width: 900px;
+        background-color: #005073;
+        color: #ffffff;
+        font-size: 16px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #007ea7;
+        font-weight: bold;
+        border-bottom: 2px solid #004a5e;
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color: #006994;
+    }
+    tr:hover {
+        background-color: #004a5e;
+    }
+    td {
+        border-bottom: 1px solid #004a5e;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Satélite</th>
+                <th>Sensor</th>
+                <th>Fecha de Adquisición</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1986</td>
+                <td>Landsat 5</td>
+                <td>Thematic Mapper (TM)</td>
+                <td>24/01/1986</td>
+            </tr>
+            <tr>
+                <td>1990</td>
+                <td>Landsat 5</td>
+                <td>Thematic Mapper (TM)</td>
+                <td>19/01/1990</td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>Landsat 7</td>
+                <td>Enhanced Thematic Mapper Plus (ETM+)</td>
+                <td>23/01/2000</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>Landsat 8</td>
+                <td>Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)</td>
+                <td>21/01/2014</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Landsat 8</td>
+                <td>Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)</td>
+                <td>19/01/2019</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Landsat 8</td>
+                <td>Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS)</td>
+                <td>14/01/2023</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

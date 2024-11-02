@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla Estadísticas Año</title>
+<style>
+    body {
+        font-family: Tahoma, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        max-width: 900px;
+        background-color: #005073;
+        color: #ffffff;
+        font-size: 16px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px;
+        text-align: center;
+    }
+    th {
+        background-color: #007ea7;
+        font-weight: bold;
+        border-bottom: 2px solid #004a5e;
+    }
+    tr:nth-child(even) {
+        background-color: #006994;
+    }
+    tr:hover {
+        background-color: #004a5e;
+    }
+    td {
+        border-bottom: 1px solid #004a5e;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Mínima</th>
+                <th>Máxima</th>
+                <th>Media</th>
+                <th>Mediana</th>
+                <th>Moda</th>
+                <th>DE</th>
+                <th>CV</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1986</td><td>376,33</td><td>960,49</td><td>464,42</td><td>390,71</td><td>385,21</td><td>153,03</td><td>32,95</td>
+            </tr>
+            <tr>
+                <td>1990</td><td>376,33</td><td>957,97</td><td>464,60</td><td>390,88</td><td>385,21</td><td>152,51</td><td>32,83</td>
+            </tr>
+            <tr>
+                <td>2000</td><td>376,33</td><td>1049,02</td><td>471,20</td><td>392,64</td><td>385,21</td><td>158,27</td><td>33,59</td>
+            </tr>
+            <tr>
+                <td>2014</td><td>376,34</td><td>1044,69</td><td>467,68</td><td>407,94</td><td>385,21</td><td>147,86</td><td>31,62</td>
+            </tr>
+            <tr>
+                <td>2019</td><td>376,34</td><td>1044,69</td><td>466,95</td><td>409,58</td><td>385,21</td><td>146,49</td><td>31,37</td>
+            </tr>
+            <tr>
+                <td>2023</td><td>376,34</td><td>1044,69</td><td>469,11</td><td>410,60</td><td>385,21</td><td>148,39</td><td>31,63</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
