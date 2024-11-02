@@ -17,8 +17,38 @@
             border: none;
             margin: 20px 0;
         }
-        h1 {
+        h1, h3 {
             color: #005073;
+        }
+        /* Estilos para tablas */
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-size: 16px;
+            background-color: #005073;
+            color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #007ea7;
+            font-weight: bold;
+            border-bottom: 2px solid #004a5e;
+        }
+        tr:nth-child(even) {
+            background-color: #006994;
+        }
+        tr:hover {
+            background-color: #004a5e;
+        }
+        td {
+            border-bottom: 1px solid #004a5e;
         }
     </style>
 </head>
@@ -26,22 +56,22 @@
     <h1>Tablas de Análisis del Lago de Valencia</h1>
 
     <h3>Tabla de Materiales</h3>
-    <iframe src="assets/tables/tabla_materiales.html"></iframe>
+    <iframe src="tables/tabla_materiales.html"></iframe>
 
     <h3>Valor Mediana</h3>
-    <iframe src="assets/tables/valor_mediana.html"></iframe>
+    <iframe src="tables/valor_mediana.html"></iframe>
 
     <h3>Estadísticos</h3>
-    <iframe src="assets/tables/estadisticos.html"></iframe>
-
-    <h3>Cálculos Mediana</h3>
-    <iframe src="assets/tables/calculos_mediana.html"></iframe>
+    <iframe src="tables/estadisticos.html"></iframe>
 
     <h3>Comparación Resultados</h3>
-    <iframe src="assets/tables/comparacion_resultados.html"></iframe>
+    <iframe src="tables/comparacion_resultados.html"></iframe>
+
+    <h3>Cálculos Mediana</h3>
+    <iframe src="tables/calculos_mediana.html"></iframe>
 
     <h3>Variación Estimada</h3>
-    <iframe src="assets/tables/variacion_estimada.html"></iframe>
+    <iframe src="tables/variacion_estimada.html"></iframe>
 
 </body>
 </html>
