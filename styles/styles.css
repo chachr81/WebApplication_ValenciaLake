@@ -21,6 +21,7 @@ html, body, #viewDiv {
   display: flex;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  gap: 5px; /* Espacio entre los elementos */
 }
 
 #timeSlider {
@@ -35,11 +36,6 @@ html, body, #viewDiv {
 }
 
 /* Control buttons */
-.control-buttons {
-  display: flex;
-  align-items: center;
-}
-
 button {
   background-color: #007acc;
   color: white;
@@ -48,7 +44,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  margin: 0 5px;
   transition: background-color 0.3s ease;
 }
 
@@ -79,4 +74,133 @@ button:active {
 canvas {
   width: 100% !important;
   height: auto !important;
+}
+
+/* Botón "Ver Tablas" */
+a[href="tablas.html"] {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    background: #005073;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10000;
+}
+
+/* Tabla en tablas.html */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: #005073;
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #007ea7;
+  font-weight: bold;
+  border-bottom: 2px solid #004a5e;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #006994;
+}
+
+tr:hover {
+  background-color: #004a5e;
+}
+
+td {
+  border-bottom: 1px solid #004a5e;
+}
+
+/* Responsive adjustments */
+
+/* For screens smaller than 768px (tablet and mobile) */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
+
+/* For screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+  #timeControl {
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    bottom: 10px;
+    padding: 10px;
+  }
+
+  #timeSlider {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #yearLabel {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+
+  a[href="tablas.html"] {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    bottom: 60px;
+  }
+
+  /* Table responsive styling */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  /* Hides table headers */
+  thead tr {
+    display: none;
+  }
+
+  /* Adds a row display for each cell */
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  /* Adds the label of each header on small screens */
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: calc(50% - 15px);
+    white-space: nowrap;
+    font-weight: bold;
+    color: #ffffff;
+  }
 }
