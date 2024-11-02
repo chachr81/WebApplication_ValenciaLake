@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
-  <title>Variación de Área y Volumen del Lago de Valencia</title>
+  <title>Variación de Área y Volúmen del Lago de Valencia</title>
 
   <!-- Estilos de ArcGIS -->
   <link rel="stylesheet" href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css" />
@@ -28,27 +28,8 @@
   <!-- Contenedor del mapa -->
   <div id="viewDiv"></div>
 
-  <!-- Botón para abrir tablas.html, ubicado en la esquina inferior derecha -->
-  <a href="tablas.html" target="_blank" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    text-decoration: none;
-    background: #005073;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    z-index: 1000;">
-    Ver Tablas
-  </a>
-
   <!-- Control deslizante para el timelapse con botones de reproducción, avance y retroceso -->
-  <div id="timeControl" style="
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1001;">
+  <div id="timeControl">
     <button id="rewindButton">⏪</button> <!-- Botón de retroceso -->
     <button id="playButton">▶</button> <!-- Botón de reproducción -->
     <button id="forwardButton">⏩</button> <!-- Botón de avance -->
