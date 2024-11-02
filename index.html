@@ -28,11 +28,11 @@
   <!-- Contenedor del mapa -->
   <div id="viewDiv"></div>
 
-  <!-- Botón para abrir tablas.html -->
+  <!-- Botón para abrir tablas.html, ubicado en la esquina inferior derecha -->
   <a href="tablas.html" target="_blank" style="
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     color: white;
     text-decoration: none;
     background: #005073;
@@ -44,7 +44,11 @@
   </a>
 
   <!-- Control deslizante para el timelapse con botones de reproducción, avance y retroceso -->
-  <div id="timeControl">
+  <div id="timeControl" style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;">
     <button id="rewindButton">⏪</button> <!-- Botón de retroceso -->
     <button id="playButton">▶</button> <!-- Botón de reproducción -->
     <button id="forwardButton">⏩</button> <!-- Botón de avance -->
